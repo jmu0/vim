@@ -13,7 +13,7 @@ set shiftwidth=4 	"hoeveel spaties bij autoindent
 set softtabstop=4 	"hoeveel spaties bij Tab
 "search
 set hlsearch 		"highlight search
-saet incsearch 		"incremental search
+set incsearch 		"incremental search
 set showmatch 		"bij zoeken matches weergeven
 set smartcase 		"case bij zoeken
 set ic                  "ignore case bij zoeken
