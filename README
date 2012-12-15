@@ -1,0 +1,11 @@
+Readme file voor vim settings
+
+pathogen: 
+	manage vim plugins
+	in vimrc:
+		call pathogen#runtime_append_all_bundles()
+		call pathogen#helptags()
+
+plugin toevoegen:
+	git submodule add <url van git rep.> bundle/<naam plugin>
+
