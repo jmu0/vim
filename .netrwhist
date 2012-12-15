@@ -1,5 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/home/jos/.vim'
-let g:netrw_dirhist_2='/mnt/data/data/Programmeren/arduino/projects/socket.client'
-let g:netrw_dirhist_3='/home/jos/tutorials'
+let g:netrw_dirhist_cnt =0
