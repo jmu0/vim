@@ -1,4 +1,4 @@
-"pathogen plugin
+"pathogen plumrc openen in nieuwe tabmrc openen in nieuwe tabgin
 call pathogen#runtime_append_all_bundles() "pathogen voor plugins
 call pathogen#helptags() 		   "pathogen voor pathogen
 
@@ -40,6 +40,8 @@ map <F4> <ESC>:TaskList<CR>                     "tasklist aan/uit
 map <F5> <ESC>:w<CR>:!ctags -R *<CR>:!sh run<CR>"script 'run' uitvoeren
 autocmd FileType cpp map <F6> <ESC>:w<CR>:e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR> "switch tussen source en header
 autocmd FileType arduino map <F6> <ESC>:!picocom $SERIALDEV<CR>
+autocmd FileType php map <F12> <ESC>:!ctags -f php.tags --languages=PHP -R<CR>:set tags+=php.tags<CR>
+autocmd FileType cpp map <F12> <ESC>:!ctags -R --c++-kinds=+pl -f cpp.tags --fields=+iaS --extra=+q .<CR>:set tags +=cpp.tags<CR>
 
 "autocomplete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
@@ -51,6 +53,14 @@ autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd! BufNewFile,BufRead *.ino setlocal ft=arduino "bij .ino file filetype op arduino instellen
 autocmd BufWritePost .vimrc source $MYVIMRC "na opslaan .vimrc automatisch laden
 
-"syntastic
+"PLUGIN syntastic
 let g:syntastic_auto_loc_list=1                 "automatisch error-lijst laten zien
 let g:syntastic_enable_balloons=1               "markeert errors voor regelnummers
+
+"PLUGIN php mess detector
+autocmd BufNewFile,BufRead *.php let g:phpqa_messdetector_ruleset = "~/.vim/phpmd.rulesets/codesize.xml"
+autocmd BufNewFile,BufRead *.php let g:phpqa_messdetector_ruleset = "~/.vim/phpmd.rulesets/controversial.xml"
+autocmd BufNewFile,BufRead *.php let g:phpqa_messdetector_ruleset = "~/.vim/phpmd.rulesets/design.xml"
+autocmd BufNewFile,BufRead *.php let g:phpqa_messdetector_ruleset = "~/.vim/phpmd.rulesets/naming.xml"
+autocmd BufNewFile,BufRead *.php let g:phpqa_messdetector_ruleset = "~/.vim/phpmd.rulesets/unusedcode.xml"
+
