@@ -28,3 +28,6 @@
 [submodule "bundle/phpqa"]
 	path = bundle/phpqa
 	url = https://github.com/joonty/vim-phpqa.git
+[submodule "bundle/javascript"]
+	path = bundle/javascript
+	url = https://github.com/pangloss/vim-javascript.git
