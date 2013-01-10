@@ -55,12 +55,13 @@ map <F5> <ESC>:w<CR>:!ctags -R *<CR>:!sh run<CR>
 "switch tussen source en header
 autocmd FileType cpp map <F6> <ESC>:w<CR>:e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR> 
 "F6 = serial monitor bij arduino
-autocmd FileType arduino map <F6> <ESC>:!picocom $SERIALDEV<CR>
+autocmd FileType arduino map <F6> <ESC>:!sh monitor<CR>
 "Ctags php
-autocmd FileType php map <F12> <ESC>:!ctags -f php.tags --languages=PHP -R<CR>:set tags+=php.tags<CR>
+autocmd FileType php map <F12> <ESC>:!ctags -f php.tags -R<CR>:set tags+=php.tags<CR>
 "Ctags cpp
 autocmd FileType cpp map <F12> <ESC>:!ctags -R --c++-kinds=+pl -f cpp.tags --fields=+iaS --extra=+q .<CR>:set tags +=cpp.tags<CR>
-
+"ctags javascript (=jsctags zie doctorjs)
+autocmd FileType javascript map <F12> <ESC>:!jsctags -f js.tags * <CR>:set tags +=js.tags<CR>
 
 "FILES EN FILETYPES
 "==================
