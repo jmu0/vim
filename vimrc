@@ -38,7 +38,7 @@ map <leader><space> :noh <CR>
 "autoindent file, en terug naar laatste edit
 map <leader>a gg=Gg, <CR>                       
 "nerttree en tagbar openen
-map <leader>t :NERDTreeToggle<CR>:TagbarToggle<CR>
+map <leader>l :NERDTreeToggle<CR>:TagbarToggle<CR>
 "tussen vensters switchen
 nnoremap <C-h> <C-w>h                           
 nnoremap <C-j> <C-w>j                           
