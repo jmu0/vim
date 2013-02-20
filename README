@@ -10,4 +10,6 @@ plugin toevoegen:
 	git submodule add <url van git rep.> bundle/<naam plugin>
         git submodule init
         git submodule update
+plugins updaten
+        git submodule foreach git pull origin master
 
