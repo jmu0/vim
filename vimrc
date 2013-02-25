@@ -9,7 +9,8 @@ set number 		"regelnummers
 syntax on 		"syntax highlighting
 filetype on 		"filetype detection
 set scrolloff=2   	"altijd laatste x regels laten zien
-colorscheme slate       "colorschemes, zie :e $VIMRUNTIME/colors of :colo <c-d>
+colorscheme ir_black    "colorschemes, zie :e $VIMRUNTIME/colors of :colo <c-d>
+set guifont=monaco:h11  "font in gvim of macvim
 "indentation
 filetype indent on 	"filetype indentation
 set autoindent 		"automatisch inspringen
