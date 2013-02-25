@@ -9,7 +9,7 @@ set number 		"regelnummers
 syntax on 		"syntax highlighting
 filetype on 		"filetype detection
 set scrolloff=2   	"altijd laatste x regels laten zien
-colorscheme peachpuff          "colorschemes, zie :e $VIMRUNTIME/colors
+colorscheme slate       "colorschemes, zie :e $VIMRUNTIME/colors of :colo <c-d>
 "indentation
 filetype indent on 	"filetype indentation
 set autoindent 		"automatisch inspringen
