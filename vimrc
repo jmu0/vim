@@ -22,6 +22,7 @@ set incsearch 		"incremental search
 set showmatch 		"bij zoeken matches weergeven
 set smartcase 		"case bij zoeken
 set ic                  "ignore case bij zoeken
+set linebreak           "regel niet midden in woord afkappen
 
 
 "KEY BINDINGS
