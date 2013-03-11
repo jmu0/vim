@@ -40,7 +40,7 @@ map <leader><space> :noh <CR>
 "autoindent file, en terug naar laatste edit
 map <leader>a gg=Gg, <CR>                       
 "nerttree en tagbar openen
-map <leader>l :NERDTreeToggle<CR>:TagbarToggle<CR>
+map <leader>l :NERDTreeToggle<CR> :TlistToggle<CR>
 "tussen vensters switchen
 nnoremap <C-h> <C-w>h                           
 nnoremap <C-j> <C-w>j                           
@@ -50,12 +50,14 @@ nnoremap <C-l> <C-w>l
 inoremap jj <ESC>                               
 "nerdtree aan/uit
 map <F2> <ESC>:NERDTreeToggle<CR>
+"taglist aan/uit
+map <F3> <ESC>:TlistToggle<CR>
 "tagbar aan/uit
-map <F3> <ESC>:TagbarToggle<CR>                 
-"tasklist aan/uit
-map <F4> <ESC>:TaskList<CR>                     
+map <F4> <ESC>:TagbarToggle<CR>                 
 "script 'run' uitvoeren
 map <F5> <ESC>:w<CR>:!ctags -R *<CR>:!sh run<CR>
+"tasklist aan/uit
+map <F8> <ESC>:TaskList<CR>                     
 "switch tussen source en header
 autocmd FileType cpp map <F6> <ESC>:w<CR>:e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR> 
 "F6 = serial monitor bij arduino
@@ -88,6 +90,8 @@ autocmd BufWritePost .vimrc source $MYVIMRC
 "syntastic
 let g:syntastic_auto_loc_list=1                 "automatisch error-lijst laten zien
 let g:syntastic_enable_balloons=1               "markeert errors voor regelnummers
+"Taglist aan de rechterkant
+let Tlist_Use_Right_Window   = 1
 
 "php mess detector
 "autocmd BufNewFile,BufRead *.php let g:phpqa_messdetector_ruleset = "~/.vim/phpmd.rulesets/codesize.xml"
