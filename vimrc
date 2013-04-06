@@ -82,7 +82,8 @@ autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd! BufNewFile,BufRead *.ino setlocal ft=arduino 
 "na opslaan .vimrc automatisch laden
 autocmd BufWritePost .vimrc source $MYVIMRC 
-
+"format json met python tool
+map <leader>j :%!python -m json.tool<CR>
 
 "PLUGINS
 "=======
