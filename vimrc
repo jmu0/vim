@@ -40,7 +40,7 @@ map <leader><space> :noh <CR>
 "autoindent file, en terug naar laatste edit
 map <leader>a gg=Gg, <CR>                       
 "nerttree en tagbar openen
-map <leader>l :NERDTreeToggle<CR> :TlistToggle<CR>
+map <leader>l :NERDTreeToggle<CR> :TagbarToggle<CR>
 "tussen vensters switchen
 nnoremap <C-h> <C-w>h                           
 nnoremap <C-j> <C-w>j                           
@@ -82,7 +82,8 @@ autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd! BufNewFile,BufRead *.ino setlocal ft=arduino 
 "na opslaan .vimrc automatisch laden
 autocmd BufWritePost .vimrc source $MYVIMRC 
-
+"format json met python tool
+map <leader>j :%!python -m json.tool<CR>
 
 "PLUGINS
 "=======
