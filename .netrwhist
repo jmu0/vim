@@ -1,15 +1,8 @@
 let g:netrw_dirhistmax  =10
-<<<<<<< HEAD
-let g:netrw_dirhist_cnt =0
-=======
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/Users/jos/dataserver/webserver/ha'
-let g:netrw_dirhist_2='/Users/jos/dataserver/webserver/ha/assortiment'
-let g:netrw_dirhist_3='/Users/jos/dataserver/webserver/ha'
-let g:netrw_dirhist_4='/Users/jos/dataserver/webserver/ha/verkoop'
-let g:netrw_dirhist_5='/Users/jos/dataserver/webserver/ha/verkoop/controller'
-let g:netrw_dirhist_6='/data/webserver/util/mpdf/utils'
-let g:netrw_dirhist_7='/data/git/logboek/2012/07/30'
-let g:netrw_dirhist_8='/data/git/logboek/2012/08/06'
-let g:netrw_dirhist_9='/home/jos/sabnzbd/util'
->>>>>>> 44f29cb83753706d52832097484d8868608789f8
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/data/git/logboek/2013/04/12'
+let g:netrw_dirhist_2='/etc/mdadm'
+let g:netrw_dirhist_3='/data/git/logboek/2013/04/12'
+let g:netrw_dirhist_4='/data/git/logboek/2012/06/24'
+let g:netrw_dirhist_5='/data/git/logboek/2013/04/12'
+let g:netrw_dirhist_6='/etc/drbd.d'
