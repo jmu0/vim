@@ -91,6 +91,8 @@ map <leader>j :%!python -m json.tool<CR>
 "syntastic
 let g:syntastic_auto_loc_list=1                 "automatisch error-lijst laten zien
 let g:syntastic_enable_balloons=1               "markeert errors voor regelnummers
+"geen syntax check bij html files (foutmeldingen lege tags)
+let g:syntastic_mode_map={ 'mode': 'active', 'active_filetypes': [], 'passive_filetypes': ['html'] }
 "Taglist aan de rechterkant
 let Tlist_Use_Right_Window   = 1
 
