@@ -1,8 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/data/git/logboek/2013/04/12'
-let g:netrw_dirhist_2='/etc/mdadm'
-let g:netrw_dirhist_3='/data/git/logboek/2013/04/12'
-let g:netrw_dirhist_4='/data/git/logboek/2012/06/24'
-let g:netrw_dirhist_5='/data/git/logboek/2013/04/12'
-let g:netrw_dirhist_6='/etc/drbd.d'
+let g:netrw_dirhist_cnt =0
