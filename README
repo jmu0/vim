@@ -12,4 +12,6 @@ plugin toevoegen:
         git submodule update
 plugins updaten
         git submodule foreach git pull origin master
-
+jslint installeren (javascript syntax check):
+        node + npm installeren
+        sudo npm install -g jslint
