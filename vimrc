@@ -76,11 +76,14 @@ autocmd FileType javascript map <F12> <ESC>:!jsctags -f js.tags * <CR>:set tags 
 "autocomplete
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
+set completeopt=menuone,longest
 "autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 "autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 "autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 "autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 
+"supertab
+let g:SuperTabDefaultCompletionType="<C-X><C-O>"
 "tern = javascript autocomplete
 let g:tern_map_keys=1
 let g:tern_show_argument_hints='on_hold'
