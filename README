@@ -15,3 +15,10 @@ plugins updaten
 jslint installeren (javascript syntax check):
         node + npm installeren
         sudo npm install -g jslint
+tern installeren (javascript completion)
+        node + npm installeren
+        in ~/.vim/bundle/tern_for_vim:
+        npm install
+        LET OP: vim met python support is nodig (echo has("python"))
+                in arch: niet pakket vim maar pakket gvim installeren
+
