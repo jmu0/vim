@@ -21,8 +21,3 @@ tern installeren (javascript completion)
         npm install
         LET OP: vim met python support is nodig (echo has("python"))
                 in arch: niet pakket vim maar pakket gvim installeren
-YouCompleteMe installeren (code completion)
-        git clone .. (zie github)
-        in ~/.vim/bundle/YouCompleteMe:
-            git submodule update --init --recursive
-            ./installl.sh --clang-completer
