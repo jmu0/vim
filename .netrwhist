@@ -1,11 +1,4 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/data/git/logboek/2014/03'
-let g:netrw_dirhist_2='/data/git/logboek/2012/08/04'
-let g:netrw_dirhist_3='/data/git/logboek/2014/03'
-let g:netrw_dirhist_4='/data/git/logboek/2014'
-let g:netrw_dirhist_5='/data/git/logboek/2014/02/15'
-let g:netrw_dirhist_6='/data/git/logboek/2013/04/12'
-let g:netrw_dirhist_7='/etc/drbd.d'
-let g:netrw_dirhist_8='/data/git/logboek/2013/04/12'
-let g:netrw_dirhist_9='/data/git/logboek/2014/02/15'
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/data/git/logboek/2012/10/16'
+let g:netrw_dirhist_2='/data/ha-data/webserver/div/test/buttongroup/css3-github-buttons'

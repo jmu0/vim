@@ -9,7 +9,7 @@ set number 		"regelnummers
 syntax on 		"syntax highlighting
 filetype on 		"filetype detection
 set scrolloff=2   	"altijd laatste x regels laten zien
-colorscheme ir_black    "colorschemes, zie :e $VIMRUNTIME/colors of :colo <c-d>
+"colorscheme ir_black    "colorschemes, zie :e $VIMRUNTIME/colors of :colo <c-d>
 set guifont=monaco:h11  "font in gvim of macvim
 "indentation
 filetype indent on 	"filetype indentation
@@ -74,10 +74,16 @@ autocmd FileType javascript map <F12> <ESC>:!jsctags -f js.tags * <CR>:set tags 
 "==================
 
 "autocomplete
-autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
-autocmd FileType css set omnifunc=csscomplete#CompleteCSS
-autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+filetype plugin on
+set omnifunc=syntaxcomplete#Complete
+"autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+"autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+"autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+"autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+
+"tern = javascript autocomplete
+let g:tern_map_keys=1
+let g:tern_show_argument_hints='on_hold'
 
 "bij .ino file filetype op arduino instellen
 autocmd! BufNewFile,BufRead *.ino setlocal ft=arduino 
