@@ -1,12 +1,6 @@
-[submodule "vim-fugitive"]
-	path = vim-fugitive
-	url = https://github.com/tpope/vim-fugitive.git
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
-[submodule "bundles/arduino"]
-	path = bundles/arduino
-	url = https://github.com/kingbin/vim-arduino.git
 [submodule "bundle/arduino"]
 	path = bundle/arduino
 	url = https://github.com/kingbin/vim-arduino.git
@@ -40,12 +34,9 @@
 [submodule "bundle/vim-less"]
 	path = bundle/vim-less
 	url = https://github.com/KohPoll/vim-less.git
-[submodule "bundle/tern_for_vim"]
-	path = bundle/tern_for_vim
-	url = https://github.com/marijnh/tern_for_vim.git
-[submodule "bundle/YouCompleteMe"]
-	path = bundle/YouCompleteMe
-	url = https://github.com/Valloric/YouCompleteMe.git
 [submodule "bundle/delimitMate"]
 	path = bundle/delimitMate
 	url = https://github.com/Raimondi/delimitMate.git
+[submodule "bundle/supertab"]
+	path = bundle/supertab
+	url = https://github.com/ervandew/supertab.git
