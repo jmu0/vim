@@ -76,7 +76,7 @@ autocmd FileType javascript map <F12> <ESC>:!jsctags -f js.tags * <CR>:set tags 
 "autocomplete
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
-set completeopt=menuone,longest
+set completeopt=menuone,longest,preview
 "autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 "autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 "autocmd FileType css set omnifunc=csscomplete#CompleteCSS
