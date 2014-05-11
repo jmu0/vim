@@ -1,4 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =3
 let g:netrw_dirhist_1='/data/git/logboek/2012/10/16'
 let g:netrw_dirhist_2='/data/ha-data/webserver/div/test/buttongroup/css3-github-buttons'
+let g:netrw_dirhist_3='/data/git/logboek/2014/03/23'
