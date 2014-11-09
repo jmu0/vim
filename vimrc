@@ -92,8 +92,12 @@ let g:tern_show_argument_hints='on_hold'
 autocmd! BufNewFile,BufRead *.ino setlocal ft=arduino 
 "na opslaan .vimrc automatisch laden
 autocmd BufWritePost .vimrc source $MYVIMRC 
-"format json met python tool
-map <leader>j :%!python -m json.tool<CR>
+"format 
+autocmd FileType json noremap <leader>f :%!python -m json.tool<CR>
+autocmd FileType javascript noremap <buffer>  <leader>f :call JsBeautify()<cr>
+autocmd FileType html noremap <buffer> <leader>f :call HtmlBeautify()<cr>
+autocmd FileType css noremap <buffer> <leader>f :call CSSBeautify()<cr>
+
 
 "PLUGINS
 "=======
