@@ -21,3 +21,6 @@ tern installeren (javascript completion)
         npm install
         LET OP: vim met python support is nodig (echo has("python"))
                 in arch: niet pakket vim maar pakket gvim installeren
+jsbeautify: 
+        cd bundle/jsbeautify
+        git submodule update --init --recursive
