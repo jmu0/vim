@@ -42,6 +42,8 @@ map <leader><space> :noh <CR>
 map <leader>a gg=Gg, <CR>                       
 "nerttree en tagbar openen
 map <leader>l :NERDTreeToggle<CR> :TagbarToggle<CR>
+" todo list recursive weergeven
+map <leader>T :grep -rn TODO * <CR> :copen <CR> <C-W>K
 "tussen vensters switchen
 nnoremap <C-h> <C-w>h                           
 nnoremap <C-j> <C-w>j                           
