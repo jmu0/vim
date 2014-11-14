@@ -1,0 +1,11 @@
+#!/bin/bash
+git submodule init
+git submodule update
+sudo npm install -g jslint
+cd bundle/tern_for_vim
+npm install
+cd ../jsbeautify
+git submodule update --init --recursive
+cd ../../
+echo "done!";
+echo "install vim, nodejs+npm, ctags"
