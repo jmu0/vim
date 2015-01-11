@@ -25,6 +25,7 @@ set showmatch 		"bij zoeken matches weergeven
 set smartcase 		"case bij zoeken
 set ic                  "ignore case bij zoeken
 set linebreak           "regel niet midden in woord afkappen
+set fdm=syntax          "code folding syntax (zc=close, zo=open)"
 
 
 "KEY BINDINGS
