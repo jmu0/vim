@@ -108,6 +108,7 @@ autocmd FileType json noremap <leader>a :%!python -m json.tool<CR>
 autocmd FileType javascript noremap <buffer>  <leader>a :call JsBeautify()<cr>
 autocmd FileType html noremap <buffer> <leader>a :call HtmlBeautify()<cr>
 autocmd FileType css noremap <buffer> <leader>a :call CSSBeautify()<cr>
+autocmd FileTYpe php noremap <buffer> <leader>a gg=Gg, <CR>
 
 
 "PLUGINS
