@@ -41,11 +41,13 @@ map <leader>q :qall!<CR>
 "search highlighting uitzetten
 map <leader><space> :noh <CR>
 "autoindent file, en terug naar laatste edit
-map <leader>a gg=Gg, <CR>                       
+"ZIE ONDER beatify functies  map <leader>a gg=Gg, <CR>                       
 "nerttree en tagbar openen
 map <leader>l :NERDTreeToggle<CR> :TagbarToggle<CR>
 " todo list recursive weergeven
 map <leader>T :grep -rn TODO * <CR> :copen <CR> <C-W>K
+"fuzzyfinder file mode
+map <leader>f :FufFile <CR>
 "tussen vensters switchen
 nnoremap <C-h> <C-w>h                           
 nnoremap <C-j> <C-w>j                           
@@ -99,10 +101,10 @@ autocmd! BufNewFile,BufRead *.ino setlocal ft=arduino
 "na opslaan .vimrc automatisch laden
 autocmd BufWritePost .vimrc source $MYVIMRC 
 "format 
-autocmd FileType json noremap <leader>f :%!python -m json.tool<CR>
-autocmd FileType javascript noremap <buffer>  <leader>f :call JsBeautify()<cr>
-autocmd FileType html noremap <buffer> <leader>f :call HtmlBeautify()<cr>
-autocmd FileType css noremap <buffer> <leader>f :call CSSBeautify()<cr>
+autocmd FileType json noremap <leader>a :%!python -m json.tool<CR>
+autocmd FileType javascript noremap <buffer>  <leader>a :call JsBeautify()<cr>
+autocmd FileType html noremap <buffer> <leader>a :call HtmlBeautify()<cr>
+autocmd FileType css noremap <buffer> <leader>a :call CSSBeautify()<cr>
 
 
 "PLUGINS
