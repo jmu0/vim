@@ -48,6 +48,9 @@ map <leader>l :NERDTreeToggle<CR> :TagbarToggle<CR>
 map <leader>T :grep -rn TODO * <CR> :copen <CR> <C-W>K
 "fuzzyfinder file mode
 map <leader>f :FufFile <CR>
+"tcomment
+nmap <leader>c gcc
+vmap <leader>c gc
 "tussen vensters switchen
 nnoremap <C-h> <C-w>h                           
 nnoremap <C-j> <C-w>j                           
