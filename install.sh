@@ -6,6 +6,7 @@ cd bundle/tern_for_vim
 npm install
 cd ../jsbeautify
 git submodule update --init --recursive
+ln -s vimrc ../.vimrc
 cd ../../
 echo "done!";
 echo "install vim, nodejs+npm, ctags"

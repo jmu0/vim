@@ -61,3 +61,6 @@
 [submodule "bundle/L9"]
 	path = bundle/L9
 	url = https://github.com/vim-scripts/L9.git
+[submodule "bundle/css"]
+	path = bundle/css
+	url = https://github.com/JulesWang/css.vim.git
