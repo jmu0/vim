@@ -69,7 +69,9 @@ map <F5> <ESC>:w<CR>:!ctags -R *<CR>:!sh run<CR>
 "tasklist aan/uit
 map <F8> <ESC>:TaskList<CR>                     
 "terndef
-map <leader>d :TernDef<CR>
+autocmd FileType javascript map <leader>d :TernDef<CR>
+"python jump to definition
+autocmd FileType python map <leader>d <C-c>g
 "switch tussen source en header
 autocmd FileType cpp map <F6> <ESC>:w<CR>:e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR> 
 "F6 = serial monitor bij arduino
