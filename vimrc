@@ -123,6 +123,12 @@ let g:syntastic_enable_balloons=1               "markeert errors voor regelnumme
 let g:syntastic_mode_map={ 'mode': 'active', 'active_filetypes': [], 'passive_filetypes': ['html'] }
 "Taglist aan de rechterkant
 let Tlist_Use_Right_Window   = 1
+"pymode
+autocmd FileType python let g:pymode = 1
+autocmd FileType python let g:pymode_options = 1
+autocmd FileType python let g:pymode_options_max_line_length = 120
+autocmd FileType python let g:pymode_lint_ignore = "E501,C901" 
+"autocmd FileType python let g:pymode_run = 1
 
 "php mess detector
 "autocmd BufNewFile,BufRead *.php let g:phpqa_messdetector_ruleset = "~/.vim/phpmd.rulesets/codesize.xml"
