@@ -128,6 +128,11 @@ autocmd FileType python let g:pymode = 1
 autocmd FileType python let g:pymode_options = 1
 autocmd FileType python let g:pymode_options_max_line_length = 120
 autocmd FileType python let g:pymode_lint_ignore = "E501,C901" 
+"vim-go
+autocmd FileType go noremap <leader>r :GoRun<cr>
+autocmd FileType go noremap <leader>d :GoDef<cr>
+
+
 "autocmd FileType python let g:pymode_run = 1
 
 "php mess detector
