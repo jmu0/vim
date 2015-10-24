@@ -27,3 +27,7 @@ jsbeautify:
 
 fuzzyfinder:
     L9 library (=plugin) must be installed
+
+vim-go:
+    set gopath: export GOPATH=/home/jos/gocode
+    install binaries: in vim: :GoInstallBinaries
