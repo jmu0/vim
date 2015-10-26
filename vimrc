@@ -18,6 +18,7 @@ set autoindent 		"automatisch inspringen
 set expandtab 		"spaces ipv tabs
 set shiftwidth=4 	"hoeveel spaties bij autoindent
 set softtabstop=4 	"hoeveel spaties bij Tab
+set tabstop=4
 "search
 set hlsearch 		"highlight search
 set incsearch 		"incremental search
