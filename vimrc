@@ -1,4 +1,5 @@
 "pathogen plum
+filetype off "vim system-vimrc sometimes sets filetype on, required by pathogen
 call pathogen#runtime_append_all_bundles() "pathogen voor plugins
 call pathogen#helptags() 		   "pathogen voor pathogen
 
