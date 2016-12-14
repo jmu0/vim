@@ -121,6 +121,9 @@ autocmd FileTYpe php noremap <buffer> <leader>a gg=Gg, <CR>
 "syntastic
 let g:syntastic_auto_loc_list=1                 "automatisch error-lijst laten zien
 let g:syntastic_enable_balloons=1               "markeert errors voor regelnummers
+let g:syntastic_error_symbol = "✗"
+let g:syntastic_warning_symbol = "⚠"
+
 "geen syntax check bij html files (foutmeldingen lege tags)
 let g:syntastic_mode_map={ 'mode': 'active', 'active_filetypes': [], 'passive_filetypes': ['html'] }
 "Taglist aan de rechterkant
