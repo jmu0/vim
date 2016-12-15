@@ -41,7 +41,7 @@ map <leader>v :tabedit $MYVIMRC<CR>
 "alle vensters sluiten
 map <leader>q :qall!<CR>                        
 "search highlighting uitzetten
-map <leader><space> :noh <CR>
+map <leader><space> :noh <CR> :pclose <CR>
 "autoindent file, en terug naar laatste edit
 "ZIE ONDER beatify functies  map <leader>a gg=Gg, <CR>                       
 "nerttree en tagbar openen
