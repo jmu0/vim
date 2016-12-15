@@ -13,11 +13,12 @@ cd ../jsbeautify
 git submodule update --init --recursive
 
 #youcompleteme
-sudo apt-get install vim-addon-manager
-sudo apt-get install vim-gocomplete
-sudo apt-get install vim-youcompleteme
-vam install gocomplete
-vam install youcompleteme
+#WERKT OOK NIET
+#sudo apt-get install vim-addon-manager
+#sudo apt-get install vim-gocomplete
+#sudo apt-get install vim-youcompleteme
+#vam install gocomplete
+#vam install youcompleteme
 #FOUT: installatie error:
 #cd ../youcompleteme
 #git submodule init; git submodule update; 
