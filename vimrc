@@ -91,7 +91,12 @@ autocmd FileType javascript map <F12> <ESC>:!jsctags -f js.tags * <CR>:set tags 
 "autocomplete
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
-set completeopt=menuone,longest,preview
+set completeopt=menuone,preview,noselect
+
+"tip window sluiten bij beweging of uit insert mode
+" autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+" autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+
 "autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 "autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 "autocmd FileType css set omnifunc=csscomplete#CompleteCSS
@@ -102,7 +107,7 @@ let g:SuperTabDefaultCompletionType="<C-X><C-O>"
 "tern = javascript autocomplete
 let g:tern_map_keys=1
 let g:tern_show_argument_hints='on_hold'
-"let g:tern_show_signature_in_pum=1
+" let g:tern_show_signature_in_pum=1
 
 "bij .ino file filetype op arduino instellen
 autocmd! BufNewFile,BufRead *.ino setlocal ft=arduino 
