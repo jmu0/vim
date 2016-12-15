@@ -46,6 +46,7 @@
 [submodule "bundle/jsbeautify"]
 	path = bundle/jsbeautify
 	url = https://github.com/maksimr/vim-jsbeautify.git
+	ignore = untracked
 [submodule "bundle/json"]
 	path = bundle/json
 	url = https://github.com/elzr/vim-json.git
@@ -58,9 +59,11 @@
 [submodule "bundle/fuzzyfinder"]
 	path = bundle/fuzzyfinder
 	url = https://github.com/vim-scripts/FuzzyFinder.git
+	ignore = untracked
 [submodule "bundle/L9"]
 	path = bundle/L9
 	url = https://github.com/vim-scripts/L9.git
+	ignore = untracked
 [submodule "bundle/css"]
 	path = bundle/css
 	url = https://github.com/JulesWang/css.vim.git
