@@ -31,3 +31,11 @@ fuzzyfinder:
 vim-go:
     set gopath: export GOPATH=/home/jos/gocode
     install binaries: in vim: :GoInstallBinaries
+
+vim-snipmate:
+    volgende submodules installeren:
+        https://github.com/tomtom/tlib_vim.git
+        https://github.com/MarcWeber/vim-addon-mw-utils.git
+        https://github.com/garbas/vim-snipmate.git
+        https://github.com/honza/vim-snippets.git
+
