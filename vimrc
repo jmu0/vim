@@ -30,7 +30,6 @@ set linebreak           "regel niet midden in woord afkappen
 set fdm=syntax          "code folding syntax (zc=close, zo=open)"
 set foldlevelstart=20   "all olds open "
 
-
 "KEY BINDINGS
 "============
 
@@ -67,7 +66,9 @@ map <F3> <ESC>:TlistToggle<CR>
 "tagbar aan/uit
 map <F4> <ESC>:TagbarToggle<CR>                 
 "script 'run' uitvoeren
-map <F5> <ESC>:w<CR>:!ctags -R *<CR>:!sh run<CR>
+autocmd FileType cpp map <F5> <ESC>:w<CR>:!ctags -R *<CR>:!sh run<CR>
+autocmd FileType go map <F5> <ESC>:w<CR>:GoRun<CR>
+autocmd FileType javascript,html,php map <F5> <ESC>:w<CR>:!$HOME/.vim/bash/refresh.browser.sh<CR>
 "tasklist aan/uit
 map <F8> <ESC>:TaskList<CR>                     
 "terndef
@@ -83,10 +84,8 @@ autocmd FileType arduino map <F6> <ESC>:!sh monitor<CR>
 "Ctags php
 autocmd FileType php map <F12> <ESC>:!ctags -f php.tags -R<CR>:set tags+=.php.tags<CR>
 autocmd FileType php set tags=.php.tags
-"Ctags cpp
 autocmd FileType cpp map <F12> <ESC>:!ctags -R --c++-kinds=+pl -f cpp.tags --fields=+iaS --extra=+q .<CR>:set tags +=cpp.tags<CR>
-"ctags javascript (=jsctags zie doctorjs)
-autocmd FileType javascript map <F12> <ESC>:!jsctags -f js.tags * <CR>:set tags +=js.tags<CR>
+autocmd FileType javascript map <F12> <ESC>:!/home/jos/.vim/bash/create.tern-project.sh<CR>
 
 "FILES EN FILETYPES
 "==================

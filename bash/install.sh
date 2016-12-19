@@ -1,7 +1,7 @@
 !/bin/bash
 git submodule init
 git submodule update
-sudo apt-get install npm nodejs ctags golang
+sudo apt-get install npm nodejs ctags golang xdotool
 
 #jslint, tern
 sudo npm install -g jslint
