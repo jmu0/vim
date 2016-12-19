@@ -74,12 +74,15 @@ map <F8> <ESC>:TaskList<CR>
 autocmd FileType javascript map <leader>d :TernDef<CR>
 "python jump to definition
 autocmd FileType python map <leader>d <C-c>g
+"php
+autocmd FileType php map <leader>d <C-]>
 "switch tussen source en header
 autocmd FileType cpp map <F6> <ESC>:w<CR>:e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR> 
 "F6 = serial monitor bij arduino
 autocmd FileType arduino map <F6> <ESC>:!sh monitor<CR>
 "Ctags php
-autocmd FileType php map <F12> <ESC>:!ctags -f php.tags -R<CR>:set tags+=php.tags<CR>
+autocmd FileType php map <F12> <ESC>:!ctags -f php.tags -R<CR>:set tags+=.php.tags<CR>
+autocmd FileType php set tags=.php.tags
 "Ctags cpp
 autocmd FileType cpp map <F12> <ESC>:!ctags -R --c++-kinds=+pl -f cpp.tags --fields=+iaS --extra=+q .<CR>:set tags +=cpp.tags<CR>
 "ctags javascript (=jsctags zie doctorjs)
@@ -103,7 +106,7 @@ set completeopt=menuone,preview,noselect
 "autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 
 "supertab
-let g:SuperTabDefaultCompletionType="<C-X><C-O>"
+" let g:SuperTabDefaultCompletionType="<C-X><C-O>"
 "tern = javascript autocomplete
 let g:tern_map_keys=1
 let g:tern_show_argument_hints='on_hold'
