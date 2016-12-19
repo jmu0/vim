@@ -48,8 +48,7 @@ map <leader>l :NERDTreeToggle<CR> :TagbarToggle<CR>
 " todo list recursive weergeven
 map <leader>T :grep -rn TODO * <CR> :copen <CR> <C-W>K
 "fuzzyfinder file mode
-map <leader>f :FufFile <CR>
-"tcomment
+map <leader>f :FufFile <CR> "tcomment
 nmap <leader>c gcc
 vmap <leader>c gc
 "tussen vensters switchen
@@ -57,6 +56,11 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j                           
 nnoremap <C-k> <C-w>k                           
 nnoremap <C-l> <C-w>l                           
+
+"tussen buffers switchen
+nnoremap <C-b> :bp<CR>
+nnoremap <C-n> :bn<CR>
+"
 "edit mode verlaten bij jj
 inoremap jj <ESC>                               
 "nerdtree aan/uit
@@ -152,3 +156,6 @@ autocmd FileType go noremap <leader>r :GoRun<cr>
 "autocmd BufNewFile,BufRead *.php let g:phpqa_messdetector_ruleset = "~/.vim/phpmd.rulesets/design.xml"
 "autocmd BufNewFile,BufRead *.php let g:phpqa_messdetector_ruleset = "~/.vim/phpmd.rulesets/naming.xml"
 "autocmd BufNewFile,BufRead *.php let g:phpqa_messdetector_ruleset = "~/.vim/phpmd.rulesets/unusedcode.xml"
+
+let g:airline#extensions#tabline#enabled = 1
+
