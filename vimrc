@@ -148,14 +148,5 @@ autocmd FileType python let g:pymode_lint_ignore = "E501,C901"
 "vim-go
 autocmd FileType go noremap <leader>d :GoDef<cr>
 autocmd FileType go noremap <leader>r :GoRun<cr>
-
-"autocmd FileType python let g:pymode_run = 1
-"php mess detector
-"autocmd BufNewFile,BufRead *.php let g:phpqa_messdetector_ruleset = "~/.vim/phpmd.rulesets/codesize.xml"
-"autocmd BufNewFile,BufRead *.php let g:phpqa_messdetector_ruleset = "~/.vim/phpmd.rulesets/controversial.xml"
-"autocmd BufNewFile,BufRead *.php let g:phpqa_messdetector_ruleset = "~/.vim/phpmd.rulesets/design.xml"
-"autocmd BufNewFile,BufRead *.php let g:phpqa_messdetector_ruleset = "~/.vim/phpmd.rulesets/naming.xml"
-"autocmd BufNewFile,BufRead *.php let g:phpqa_messdetector_ruleset = "~/.vim/phpmd.rulesets/unusedcode.xml"
-
+"airline
 let g:airline#extensions#tabline#enabled = 1
-
