@@ -90,3 +90,9 @@
 [submodule "bundle/airline-themes"]
 	path = bundle/airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes
+[submodule "bundle/jsdoc"]
+	path = bundle/jsdoc
+	url = https://github.com/krampstudio/vim-jsdoc
+[submodule "bundle/phpdoc"]
+	path = bundle/phpdoc
+	url = https://github.com/vexxor/phpdoc.vim

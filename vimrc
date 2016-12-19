@@ -1,5 +1,4 @@
-"pathogen plum
-filetype off "vim system-vimrc sometimes sets filetype on, required by pathogen
+
 call pathogen#runtime_append_all_bundles() "pathogen voor plugins
 call pathogen#helptags() 		   "pathogen voor pathogen
 
@@ -82,6 +81,7 @@ autocmd FileType go map <F5> <ESC>:w<CR>:GoRun<CR>
 autocmd FileType javascript,html,php map <F5> <ESC>:w<CR>:!$HOME/.vim/bash/refresh.browser.sh<CR>
 "tasklist aan/uit
 map <F8> <ESC>:TaskList<CR>                     
+
 "terndef
 autocmd FileType javascript map <leader>d :TernDef<CR>
 "python jump to definition
@@ -106,26 +106,18 @@ filetype plugin on
 set omnifunc=syntaxcomplete#Complete
 set completeopt=menuone,preview,noselect
 
-"tip window sluiten bij beweging of uit insert mode
-" autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
-" autocmd InsertLeave * if pumvisible() == 0|pclose|endif
-
-"autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
-"autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
-"autocmd FileType css set omnifunc=csscomplete#CompleteCSS
-"autocmd FileType php set omnifunc=phpcomplete#CompletePHP
-
-"supertab
-" let g:SuperTabDefaultCompletionType="<C-X><C-O>"
 "tern = javascript autocomplete
-let g:tern_map_keys=1
-let g:tern_show_argument_hints='on_hold'
-" let g:tern_show_signature_in_pum=1
+autocmd FileType javascript let g:tern_map_keys=1
+autocmd FileType javascript let g:tern_show_argument_hints='on_hold'
+"autocmd FileType javascript  let g:tern_show_signature_in_pum=1
+autocmd FileType php let g:phpcomplete_parse_docblock_comments = 1
+
 
 "bij .ino file filetype op arduino instellen
 autocmd! BufNewFile,BufRead *.ino setlocal ft=arduino 
 "na opslaan .vimrc automatisch laden
 autocmd BufWritePost .vimrc source $MYVIMRC 
+
 "format 
 autocmd FileType json noremap <leader>a :%!python -m json.tool<CR>
 autocmd FileType javascript noremap <buffer>  <leader>a :call JsBeautify()<cr>
@@ -133,6 +125,10 @@ autocmd FileType html noremap <buffer> <leader>a :call HtmlBeautify()<cr>
 autocmd FileType css noremap <buffer> <leader>a :call CSSBeautify()<cr>
 autocmd FileTYpe php noremap <buffer> <leader>a gg=Gg, <CR>
 
+"DOCUMENTATIE
+"============
+autocmd FileType javascript noremap <leader>g :JsDoc<CR>
+autocmd FileType php noremap <leader>g :call PhpDoc()<CR>
 
 "PLUGINS
 "=======
@@ -158,3 +154,4 @@ autocmd FileType go noremap <leader>r :GoRun<cr>
 "airline
 let g:airline#extensions#tabline#enabled = 1
 let g:bufferline_echo = 0
+let g:airline_theme='base16_default'
