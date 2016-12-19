@@ -12,6 +12,7 @@ filetype on 		"filetype detection
 set scrolloff=2   	"altijd laatste x regels laten zien
 "colorscheme
 colorscheme zwart       "ir_black colorschemes, zie :e $VIMRUNTIME/colors of :colo <c-d>
+" colorscheme molokai
 
 
 set guifont=monaco:h11  "font in gvim of macvim
