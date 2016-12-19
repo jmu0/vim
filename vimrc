@@ -10,7 +10,10 @@ set number 		"regelnummers
 syntax on 		"syntax highlighting
 filetype on 		"filetype detection
 set scrolloff=2   	"altijd laatste x regels laten zien
+"colorscheme
 colorscheme zwart       "ir_black colorschemes, zie :e $VIMRUNTIME/colors of :colo <c-d>
+
+
 set guifont=monaco:h11  "font in gvim of macvim
 "indentation
 filetype indent on 	"filetype indentation
@@ -48,7 +51,10 @@ map <leader>l :NERDTreeToggle<CR> :TagbarToggle<CR>
 " todo list recursive weergeven
 map <leader>T :grep -rn TODO * <CR> :copen <CR> <C-W>K
 "fuzzyfinder file mode
-map <leader>f :FufFile <CR> "tcomment
+map <leader>f :FufFile<CR> 
+" map <leader>f :CtrlP <CR> 
+"
+"tcomment
 nmap <leader>c gcc
 vmap <leader>c gc
 "tussen vensters switchen
@@ -150,3 +156,4 @@ autocmd FileType go noremap <leader>d :GoDef<cr>
 autocmd FileType go noremap <leader>r :GoRun<cr>
 "airline
 let g:airline#extensions#tabline#enabled = 1
+let g:bufferline_echo = 0
