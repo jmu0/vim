@@ -1,4 +1,4 @@
-
+let g:jsdoc_default_mapping = 0 "remove mapping of <C-l
 call pathogen#runtime_append_all_bundles() "pathogen voor plugins
 call pathogen#helptags() 		   "pathogen voor pathogen
 
@@ -6,7 +6,7 @@ call pathogen#helptags() 		   "pathogen voor pathogen
 "=======
 
 set number 		"regelnummers
-syntax on 		"syntax highlighting
+syntax on 		"syntax highlighting;
 filetype on 		"filetype detection
 set scrolloff=2   	"altijd laatste x regels laten zien
 "colorscheme
@@ -128,6 +128,8 @@ autocmd FileTYpe php noremap <buffer> <leader>a gg=Gg, <CR>
 "DOCUMENTATIE
 "============
 autocmd FileType javascript noremap <leader>g :JsDoc<CR>
+"verwijdert:  let g:jsdoc_default_mapping = 0
+" autocmd FileType javascript nmap <silent> <leader>g <Plug>(jsdoc)
 autocmd FileType php noremap <leader>g :call PhpDoc()<CR>
 
 "PLUGINS
