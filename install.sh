@@ -12,6 +12,10 @@ sudo npm install
 cd ../jsbeautify
 git submodule update --init --recursive
 
+#tagbar-phpctags
+cd ../tagbar-phpctags
+make
+
 #youcompleteme
 #WERKT OOK NIET
 #sudo apt-get install vim-addon-manager

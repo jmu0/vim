@@ -96,3 +96,6 @@
 [submodule "bundle/phpdoc"]
 	path = bundle/phpdoc
 	url = https://github.com/vexxor/phpdoc.vim
+[submodule "bundle/tagbar-phpctags"]
+	path = bundle/tagbar-phpctags
+	url = https://github.com/vim-php/tagbar-phpctags.vim
