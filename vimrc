@@ -42,6 +42,8 @@ let mapleader = ","
 map <leader>v :tabedit $MYVIMRC<CR>             
 "alle vensters sluiten
 map <leader>q :qall!<CR>                        
+"shell uitvoeren
+map <leader>b :!bash<CR>
 "search highlighting uitzetten
 map <leader><space> :noh <CR> :pclose <CR>
 "autoindent file, en terug naar laatste edit
@@ -153,6 +155,8 @@ autocmd FileType python let g:pymode_lint_ignore = "E501,C901"
 "vim-go
 autocmd FileType go noremap <leader>d :GoDef<cr>
 autocmd FileType go noremap <leader>r :GoRun<cr>
+autocmd BufWritePost *.go :GoErrCheck
+
 "airline
 let g:airline#extensions#tabline#enabled = 1
 let g:bufferline_echo = 0
