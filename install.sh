@@ -1,10 +1,10 @@
-!/bin/bash
+#!/bin/bash
 git submodule init
 git submodule update
-sudo apt-get install npm nodejs ctags golang xdotool
+sudo apt-get install npm nodejs ctags golang xdotool node-less
 
 #jslint, tern
-sudo npm install -g jslint
+sudo npm install -g jshint
 cd bundle/tern_for_vim
 sudo npm install
 
